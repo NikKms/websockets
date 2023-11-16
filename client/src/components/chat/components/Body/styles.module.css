@@ -1,0 +1,80 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #333;
+	padding: 10px 32px;
+	color: white;
+}
+
+.btnHeader {
+	background-color: #ff5733;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	cursor: pointer;
+	transition: 300ms ease;
+}
+
+.btnHeader:hover {
+	background-color: red;
+}
+
+.container {
+	height: 80%;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.chatMsg {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.owner,
+.guest {
+	margin: 0 16px 8px;
+}
+
+.chatMsg > .owner {
+	text-align: right;
+}
+
+.sender {
+	width: 30%;
+	background-color: #e6f7ff;
+	padding: 8px;
+	border-radius: 5px;
+	margin-left: auto;
+}
+
+.recipient {
+	width: 30%;
+	background-color: #ccffcc;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.text {
+	font-size: 14px;
+	color: #3c3939;
+}
+
+.date {
+	font-size: 11px;
+	color: gray;
+	text-align: right;
+}
+
+.modalBtn {
+	display: none;
+}
+
+@media (max-width: 400px) {
+	.modalBtn {
+		display: flex;
+	}
+}

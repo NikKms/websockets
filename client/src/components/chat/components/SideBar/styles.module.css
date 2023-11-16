@@ -1,0 +1,33 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+	max-width: 200px;
+	background-color: #f0f0f0;
+	padding: 32px;
+}
+
+.title {
+	font-size: 22px;
+}
+
+.usersList {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 16px;
+	list-style: none;
+}
+
+.user {
+	cursor: pointer;
+}
+
+@media (max-width: 400px) {
+	.sidebar {
+		display: none;
+	}
+}
